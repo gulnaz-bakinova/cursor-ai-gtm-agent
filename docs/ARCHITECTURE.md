@@ -48,3 +48,10 @@ graph TD
 | **Hybrid RAG** | Combines vector similarity (for meaning) with `ts_rank` (for precision) |
 | **Resilience** | Automatic retries for external APIs via `tenacity` |
 | **Security** | Middleware layer for PII filtering ensures compliance |
+
+## 4. Security & Compliance
+- **PII-Sanitization:** To ensure data privacy, the system implements an automated middleware layer (`sanitize_text` utility). It intercepts all agent responses, detecting and masking Email addresses and Phone numbers with `[EMAIL_HIDDEN]` or `[PHONE_HIDDEN]` placeholders before they are delivered to Slack.
+
+## 5. Automation & Reporting
+- **Proactive Reporting:** The system features a background execution pipeline (`src/scripts/send_summary.py`) that independently performs CRM analysis and pushes daily sales summaries to Slack.
+- **Data Pagination:** Airtable integration includes automated pagination handling, ensuring the agent retrieves full datasets regardless of API response limits.
