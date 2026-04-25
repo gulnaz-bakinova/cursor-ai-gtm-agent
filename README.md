@@ -36,9 +36,13 @@ This project is an autonomous GTM AI system developed in Cursor. It orchestrates
 - **Integrations:** Slack, Airtable, Notion (MCP).
 - **DevOps:** Docker, GitHub Actions CI/CD.
 
-## Proof of Work
-*(Здесь вставь свои скриншоты: Slack-ответ, трейсы в Langfuse)*
-![Slack Response](assets/slack_demo.png)
+## System Showcase
+Visual proof of the agent system in action:
+
+- **Slack Interaction:** Real-time conversational interface.
+- **Monitoring:** Live tracing and cost-tracking in Langfuse.
+
+![Slack Demo](assets/slack_demo.png)
 ![Langfuse Traces](assets/langfuse_trace.png)
 
 ## Documentation
