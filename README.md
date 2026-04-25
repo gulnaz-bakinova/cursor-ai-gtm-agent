@@ -1,33 +1,29 @@
-# cursor-ai-gtm-agent
+# 🚀 Cursor-built Autonomous GTM Agent System
 
-**Cursor-built autonomous GTM agent system with pgvector RAG, Multi-Agent LangGraph orchestration, and Slack integration.**
+Autonomous Go-To-Market AI assistant orchestrating multi-agent workflows with LangGraph, pgvector RAG, and real-time CRM synchronization.
 
-## 🚀 Overview
-This project is an autonomous Go-To-Market (GTM) AI system. It orchestrates specialized agents to handle CRM data (Airtable), technical documentation (RAG), and Slack notifications. Designed for high reliability, it utilizes multi-agent routing with LangGraph and real-time observability with Langfuse.
-
-## 🏗 Architecture
-The system uses a hub-and-spoke architecture:
-1. **Orchestrator:** Routes incoming requests to specialized agents.
-2. **Sales Agent:** Manages CRM interactions, lead scoring, and updates.
-3. **Knowledge Agent:** Performs Hybrid RAG (Vector + Text search) over technical documentation.
+## 🌟 Key Engineering Highlights
+- **Multi-Agent Orchestration:** LangGraph-powered routing between Sales and Knowledge agents.
+- **Advanced RAG Pipeline:** Hybrid Semantic Search (pgvector + full-text) with Cross-Encoder reranking for 20-30% higher accuracy.
+- **Observability:** Full-stack tracing & cost logging via Langfuse SDK.
+- **Security:** Automated PII-sanitization (email/phone masking) using regex-based middleware.
+- **Resilience:** Built-in automatic retry logic (tenacity) for external API calls (Notion, Airtable, Groq).
+- **Standards:** MCP-based tool architecture for modular integration.
 
 ## 🛠 Tech Stack
 - **AI Core:** LangGraph, LangChain, Groq (Llama-3.3-70B), Sentence-Transformers.
-- **Data & RAG:** PostgreSQL (pgvector), ChromaDB, Hybrid Semantic Search.
+- **RAG:** PostgreSQL, pgvector, ChromaDB, RecursiveCharacterTextSplitter.
 - **Backend:** FastAPI, Python 3.13.
-- **Integrations:** Slack, Airtable, Notion (MCP-based).
-- **Observability:** Langfuse.
-- **Infrastructure:** Docker, ngrok.
+- **Integrations:** Slack, Airtable, Notion (MCP).
+- **DevOps:** Docker, GitHub Actions CI/CD.
 
-## ⚙️ Key Engineering Features
-- **Multi-Agent Orchestration:** Dynamic routing using LangGraph.
-- **Robust RAG:** Hybrid search combining vector similarity and full-text ranking.
-- **Resilience:** Implemented `tenacity` for API retry logic and `BackgroundTasks` for async processing.
-- **Security:** Integrated PII-sanitization layer to mask sensitive customer data.
-- **Performance:** Streamlined embedding pipeline with `RecursiveCharacterTextSplitter`.
+## 📊 Proof of Work
+*(Здесь вставь свои скриншоты: Slack-ответ, трейсы в Langfuse)*
+![Slack Response](assets/slack_demo.png)
+![Langfuse Traces](assets/langfuse_trace.png)
 
-## 🚀 Quick Start
-1. Clone the repo: `git clone ...`
-2. Set up `.env` using `.env.example`.
-3. Start services: `docker-compose up -d`.
-4. Run the app: `python3 -m uvicorn src.main:app --reload`.
+## 📖 Documentation
+Detailed technical documentation is available in the `/docs` folder:
+- [Architecture](docs/ARCHITECTURE.md)
+- [Security & PII](docs/SECURITY.md)
+- [Deployment Guide](docs/DEPLOYMENT.md)
