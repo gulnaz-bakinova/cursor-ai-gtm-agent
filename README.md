@@ -42,7 +42,7 @@ This project is an autonomous GTM AI system developed in Cursor. It orchestrates
 ![Langfuse Traces](assets/langfuse_trace.png)
 
 ## Documentation
-Detailed technical documentation is available in the `/docs` folder:
+Detailed technical documentation is available in the [`/docs`](/docs) folder:
 *   [📄 ARCHITECTURE.md](docs/ARCHITECTURE.md) — System design, data flow diagrams, and spec-first approach details.
 *   [🔌 INTEGRATIONS.md](docs/INTEGRATIONS.md) — API specifications for Airtable, Notion, and Slack.
 *   [🔐 SECURITY.md](docs/SECURITY.md) — Privacy layer, PII-sanitization, and credential management.
