@@ -14,7 +14,13 @@ The system is built on a modular **Hub-and-Spoke** architecture using **LangGrap
 4. **Monitoring:** All steps are logged to **Langfuse** for observability, latency tracking, and cost management.
 5. **Safety Layer:** Every outgoing message passes through `sanitize_text` to mask PII (Emails/Phones).
 
-## 2. Diagram
+## 2. Spec-First Development
+The system follows a **spec-first development approach**:
+- **State Definition:** System state (`OrchestratorState`) was strictly defined using `TypedDict` and `Annotated` types before implementation to ensure type safety across agents.
+- **Interface-first Tools:** MCP-based tool interfaces were designed to be agnostic of the specific LLM provider, allowing seamless switching between local models (Llama-3) and cloud APIs (Groq).
+- **Data Mapping:** Data schemas for Airtable and Notion were mapped to system entities early in the development lifecycle to ensure clean ETL processes.
+
+## 3. Diagram
 
 ```mermaid
 graph TD
