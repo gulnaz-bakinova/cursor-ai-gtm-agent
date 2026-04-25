@@ -1,5 +1,7 @@
 # Cursor-built Autonomous GTM Agent System
 
+*🇷🇺 [Русская версия](README.ru.md)*
+
 > Pet progect: Autonomous Go-To-Market AI assistant orchestrating multi-agent workflows with LangGraph, pgvector RAG, and real-time CRM synchronization.
 
 ![LangGraph](https://img.shields.io/badge/LangGraph-MultiAgent-blue?style=flat-square)
