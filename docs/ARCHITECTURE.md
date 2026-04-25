@@ -10,7 +10,7 @@ The system is built on a modular **Hub-and-Spoke** architecture using **LangGrap
    - Routes to the appropriate agent.
 3. **Execution Layer:**
    - **Sales Agent:** Queries Airtable via MCP-based tool, performs lead scoring, and updates status.
-   - **Knowledge Agent:** Performs Hybrid RAG (Vector Search + Full-Text) on PostgreSQL/ChromaDB + Notion via MCP-tool.
+   - **Knowledge Agent:** Performs Hybrid RAG on PostgreSQL/ChromaDB, searches internal support tickets, and integrates Notion via MCP. All queries and agent interactions are logged to Langfuse for auditing and latency optimization.
 4. **Monitoring:** All steps are logged to **Langfuse** for observability, latency tracking, and cost management.
 5. **Safety Layer:** Every outgoing message passes through `sanitize_text` to mask PII (Emails/Phones).
 
