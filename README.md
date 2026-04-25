@@ -10,6 +10,8 @@ This project is an autonomous GTM AI system developed in Cursor. It orchestrates
 - **Advanced RAG:** **Hybrid Search** (Vector + FTS) with **Cross-Encoder Reranking** and **Recursive Chunking**.
 - **Sales Automation:** Lead qualification, **Lead Scoring** (Hot/Warm/Cold), and automated **Slack Summaries**.
 - **Knowledge Base:** Integration via **MCP (Model Context Protocol)** for Notion & Postgres.
+- **Data Pagination:** Auto-paging logic for Airtable API integration to handle large-scale datasets.
+- **Proactive Reporting:** Automated sales summary pipeline (`src/scripts/send_summary.py`) for daily CRM insights.
 - **Observability:** Full request tracing and cost tracking using **Langfuse**.
 - **Security:** Middleware layer for **PII-sanitization** (email/phone masking).
 - **Reliability:** `tenacity` retry logic for API fault tolerance.
