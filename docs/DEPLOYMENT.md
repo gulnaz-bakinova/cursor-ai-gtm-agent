@@ -8,7 +8,7 @@ This project is designed as a modular, containerized AI agent system.
 - **API Keys:** Groq (for LLM), Airtable (for CRM), Notion (for Knowledge).
 
 ## 2. Environment Setup
-Create a `.env` file in the root directory using `.env.example` as a template:
+Create a `.env` file in the root directory using [.env.example](/.env.example) as a template:
 
 ```bash
 DATABASE_URL=postgresql://postgres:password123@localhost:5432/ai_gtm
