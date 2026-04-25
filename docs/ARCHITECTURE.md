@@ -1,4 +1,4 @@
-# 🏗 Architecture Overview
+# Architecture Overview
 
 The system is built on a modular **Hub-and-Spoke** architecture using **LangGraph** for multi-agent orchestration. This design ensures separation of concerns, where the orchestrator makes routing decisions, and specialized agents perform specific tasks (CRM management, knowledge retrieval).
 
