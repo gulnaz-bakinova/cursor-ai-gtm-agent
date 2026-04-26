@@ -40,12 +40,9 @@ This project is an autonomous GTM AI system developed in Cursor. It orchestrates
 
 ## System Showcase
 Visual proof of the agent system in action:
-
-- **Slack Interaction:** Real-time conversational interface.
-- **Monitoring:** Live tracing and cost-tracking in Langfuse.
-
-![Slack Demo](assets/slack_demo.png)
-![Langfuse Traces](assets/langfuse_trace.png)
+| Slack Interaction (User View) | Monitoring (Tracing in Langfuse) |
+| :--- | :--- |
+| ![Slack Demo](assets/system_interaction.png) | ![Engineering Logs](assets/Langfuse.png) | 
 
 ## Documentation
 Detailed technical documentation is available in the [`/docs`](/docs) folder:
