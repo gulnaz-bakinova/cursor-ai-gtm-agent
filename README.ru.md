@@ -39,12 +39,9 @@
 
 ## Демонстрация системы
 Визуальное подтверждение работы системы:
-
-- **Slack Interaction:** Интерфейс для общения в реальном времени.
-- **Monitoring:** Трассировка в реальном времени и трекинг затрат в Langfuse.
-
-![Slack Demo](assets/slack_demo.png)
-![Langfuse Traces](assets/langfuse_trace.png)
+| Slack Interaction (Интерфейс) | Monitoring (Трассировка в Langfuse) |
+| :--- | :--- |
+| ![Slack Demo](assets/system_interaction.png) | ![Engineering Logs](assets/Langfuse.png) | 
 
 ## Документация
 Подробная техническая документация доступна в папке [`/docs`](/docs):
